@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Neural-Systems-at-UIO/navbar/issues"
   },
-  "homepage": "https://github.com/Neural-Systems-at-UIO/navbar#readme"
+  "homepage": "https://github.com/Neural-Systems-at-UIO/navbar#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
