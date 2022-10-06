@@ -1,0 +1,20 @@
+{
+  "name": "navbar",
+  "version": "1.0.0",
+  "description": "navbar for the quint workflow",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neural-Systems-at-UIO/navbar.git"
+  },
+  "author": "Harry Carey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neural-Systems-at-UIO/navbar/issues"
+  },
+  "homepage": "https://github.com/Neural-Systems-at-UIO/navbar#readme"
+}
