@@ -80,12 +80,13 @@ body {
 /* set header height */
 header {
   background-color: #18213e;
-  height: 4.8vh;
+  height: 3.75rem;
 }
 
 /* set iframe width to 100% */
 iframe {
   width: 100%;
-  /* set height to max page minus header */
-  height: calc(95.2vh);
+  height: calc(100vh - 3.75rem);
+
+
 }
