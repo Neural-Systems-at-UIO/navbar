@@ -29,12 +29,19 @@
   <iframe src="https://image-service.ebrains.eu" id="content_frame"> style="width:100%; height:100%;"></iframe>
 </body>
 <script>
+  const query_string = window.location.search;
+  // get url parameters 
+  var current_collab = new URLSearchParams(query_string).get('clb-collab-id');
+  var current_doc_path = new URLSearchParams(query_string).get('clb-doc-path');
+  var current_doc_name = new URLSearchParams(query_string).get('clb-doc-name');
+  var current_drive_id = new URLSearchParams(query_string).get('clb-drive-id');
+
   // create dictionary with links to apps
   var links = {
-    "imageServ": "https://image-service.ebrains.eu",
-    "webAlign": "https://webalign.apps-dev.hbp.eu/?clb-collab-id={{current_collab}}",
-    "nutil": "https://nutil.org/?clb-collab-id={{current_collab}}",
-    "meshview": "https://meshview.apps.hbp.eu/collab.html?clb-collab-id={{current_collab}}"
+    "imageServ": "https://image-service.ebrains.eu/?clb-collab-id={{current_collab}}&clb-doc-path={{current_doc_path}}&clb-doc-name={{current_doc_name}}&clb-drive-id={{current_drive_id}}",
+    "webAlign": "https://webalign.apps-dev.hbp.eu/?clb-collab-id={{current_collab}}&clb-doc-path={{current_doc_path}}&clb-doc-name={{current_doc_name}}&clb-drive-id={{current_drive_id}}",
+    "nutil": "https://nutil.org/?clb-collab-id={{current_collab}}&clb-doc-path={{current_doc_path}}&clb-doc-name={{current_doc_name}}&clb-drive-id={{current_drive_id}}",
+    "meshview": "https://meshview.apps.hbp.eu/collab.html?clb-collab-id={{current_collab}}&clb-doc-path={{current_doc_path}}&clb-doc-name={{current_doc_name}}&clb-drive-id={{current_drive_id}}"
   }
   //function on click change breadcrumbs__item to a current class
   function changeClass(event) {
