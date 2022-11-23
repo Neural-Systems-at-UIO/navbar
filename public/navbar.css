@@ -1,9 +1,12 @@
 /* center div */
 .breadcrumb_wrapper {
+  /* height: 3.5rem; */
   width: 100%;
   display: flex;
   padding-bottom: 0.1%;
   padding-top: 0.1%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -11,11 +14,12 @@ body {
 }
 
 .breadcrumbs {
+  height: 3.5rem;
   border: 1px solid #cbd2d9;
   border-radius: 0.3rem;
   display: inline-flex;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0.3rem auto;
 }
 
 
@@ -23,10 +27,10 @@ body {
 
 
 .breadcrumbs__item {
-  background: #fff;
-  color: #333;
+  background: #F8FAFB;
+  color: #18213E;
   outline: none;
-  padding: 0.75em 0.75em 0.75em 1.25em;
+  padding: 1.25em 1.25em 1.25em 2em;
   position: relative;
   text-decoration: none;
   transition: background 0.2s linear;
@@ -34,13 +38,13 @@ body {
 
 .breadcrumbs__item:hover:after,
 .breadcrumbs__item:hover {
-  background: #edf1f5;
+  background: #F8FAFB;
 }
 
 
 .breadcrumbs__item:after,
 .breadcrumbs__item:before {
-  background: white;
+  background: #F8FAFB;
   bottom: 0;
   clip-path: polygon(50% 50%, -50% -50%, 0 100%);
   content: "";
@@ -74,12 +78,12 @@ body {
 .breadcrumbs__item.current,
 .breadcrumbs__item.current:after {
   background: #323f4a;
-  color: #fff;
+  color: #F8FAFB;
 }
 
 /* set header height */
 header {
-  background-color: red;
+  background-color: #18213E;
   height: 3.75rem;
 }
 

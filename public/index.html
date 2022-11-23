@@ -3,30 +3,41 @@
     border: none;
   }
 </style>
-<header>
+<header style="height: 4.5rem;">
 
   <!-- include navbar.css -->
   <link rel="stylesheet" href="navbar.css">
+
   <div class="breadcrumb_wrapper">
+    <!-- draw a wavy line arcross the header -->
+
     <nav class="breadcrumbs">
-      <a href="" id="imageServ" class="breadcrumbs__item current" onclick="changeClass(event)">Image Service</a>
-      <a href="" id="webAlign" class="breadcrumbs__item" onclick="changeClass(event)">WebAlign</a>
-      <a href="" id="nutil" class="breadcrumbs__item" onclick="changeClass(event)">Nutil</a>
-      <a href="" id="meshview" class="breadcrumbs__item" onclick="changeClass(event)">MeshView</a>
+      <a href="" id="imageServ" class="breadcrumbs__item current"
+        onclick="changeClass(event)">Image Service</a>
+      <a href="" id="webAlign" class="breadcrumbs__item"
+        onclick="changeClass(event)">WebAlign</a>
+      <a href="" id="nutil" class="breadcrumbs__item"
+        onclick="changeClass(event)">Nutil</a>
+      <a href="" id="meshview" class="breadcrumbs__item"
+        onclick="changeClass(event)">MeshView</a>
     </nav>
+
+    <img src="ebrains-ai-cropped.svg" alt="ebrains-ai" class="ebrains-ai"
+      style="position:absolute; height: 4rem; right: 2rem;">
   </div>
+
+
   <!-- include ebrains-ai.svg in the top right -->
 </header>
 <!-- https://webalign.apps-dev.hbp.eu/?clb-collab-id=quint-demo&clb-doc-path=&clb-doc-name=WebAlign&clb-drive-id=8eabbdd3-6c21-49ef-b18b-1e90e58f3f9b -->
-
 <body>
-  <!-- <img src="ebrains.svg" alt="ebrains-ai" class="ebrains-ai"> -->
 
   <!-- create iframe with no margin -->
   <!-- https://webalign.apps-dev.hbp.eu/index.html?clb-collab-id={{current_collab}}
     https://meshview.apps.hbp.eu/collab.html?clb-collab-id={{current_collab}} -->
   <!-- default src is image-service -->
-  <iframe src="https://image-service.ebrains.eu" id="content_frame"> style="width:100%; height:100%;"></iframe>
+  <iframe src="https://image-service.ebrains.eu" id="content_frame">
+    style="width:100%; height:100%;"></iframe>
 </body>
 <script>
   const query_string = window.location.search;
