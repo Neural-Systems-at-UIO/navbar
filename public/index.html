@@ -16,11 +16,14 @@
         onclick="changeClass(event)">Image Service</a>
       <a href="" id="webAlign" class="breadcrumbs__item"
         onclick="changeClass(event)">WebAlign</a>
+      <a href="" id="webWarp" class="breadcrumbs__item"
+        onclick="changeClass(event)">WebWarp</a>
       <a href="" id="nutil" class="breadcrumbs__item"
         onclick="changeClass(event)">Nutil</a>
       <a href="" id="meshview" class="breadcrumbs__item"
         onclick="changeClass(event)">MeshView</a>
     </nav>
+    <!-- set breakpoint and hide logo on narrow devices -->
 
     <img src="ebrains-ai-cropped.svg" alt="ebrains-ai" class="ebrains-ai"
       style="position:absolute; height: 4rem; right: 2rem;">
@@ -45,6 +48,7 @@
   var links = {
     "imageServ": `https://image-service.ebrains.eu/${query_string}`,
     "webAlign": `https://webalign.apps-dev.hbp.eu/${query_string}`,
+    "webWarp": `https://lz-nl.apps.hbp.eu/${query_string}`,
     "nutil": `https://www.nutil.org/${query_string}`,
     "meshview": `https://meshview.apps.hbp.eu/collab.html${query_string}`
   }
