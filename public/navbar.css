@@ -30,7 +30,9 @@ body {
   background: #F8FAFB;
   color: #18213E;
   outline: none;
-  padding: 1.25em 1.25em 1.25em 2em;
+  /* centre text  vertically*/
+
+  padding: 1.05em 1.05em 1.05em 2em;
   position: relative;
   text-decoration: none;
   transition: background 0.2s linear;
