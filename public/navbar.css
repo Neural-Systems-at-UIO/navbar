@@ -24,7 +24,12 @@ body {
 
 
 
-
+/* set breakpoint and hide ebrains-ai-cropped on narrow devices */
+@media (max-width: 70rem) {
+  .ebrains-ai {
+    display: none;
+  }
+}
 
 .breadcrumbs__item {
   background: #F8FAFB;
