@@ -39,7 +39,7 @@
   <!-- https://webalign.apps-dev.hbp.eu/index.html?clb-collab-id={{current_collab}}
     https://meshview.apps.hbp.eu/collab.html?clb-collab-id={{current_collab}} -->
   <!-- default src is image-service -->
-  <iframe src=`https://tif-dzi-tar-svc-test.apps.hbp.eu/${query_string}` id="content_frame">
+  <iframe id="content_frame">
     style="width:100%; height:100%;"></iframe>
 </body>
 <script>
@@ -51,6 +51,10 @@
     "webWarp": `https://lz-nl.apps.hbp.eu/collab.html${query_string}`,
     "nutil": `https://www.nutil.org/${query_string}`,
     "meshview": `https://meshview.apps.hbp.eu/collab.html${query_string}`
+  }
+  <!-- on load change content_frame -->
+  window.onload = function () {
+    document.getElementById("content_frame").src = links["imageServ"];
   }
   //function on click change breadcrumbs__item to a current class
   function changeClass(event) {
